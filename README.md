@@ -5,9 +5,10 @@
     - 파이썬 기존꺼 제거
 
 - 2교시
-    - https://notepad-plus-plus.org/downloads/v8.7.6/         
-    - x64 installer
-    - 구성요소-사용자정의-korean
+    - 글꼴 추가 
+        - https://notepad-plus-plus.org/downloads/v8.7.6/         
+        - x64 installer
+        - 구성요소-사용자정의-korean
 - 3교시
     - github,github desktop 설치
 - 4교시
