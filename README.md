@@ -51,7 +51,7 @@
     - **주석 처리 : ctrl + /**
     - **한줄 삭제: shift + del**
     - **markdown 미리보기 : ctrl + shift + v**
-
+    - **줄 위치 이동 : alt + 화살표**
     - 변수와 자료형
         - 변수명 규칙
         - 자료형 : none, int, float, str, bool, list, tuple(수정불가), dic, set(중복제거& 순서가 정해져 있지 않다.인덱스가 없다.)
@@ -124,6 +124,47 @@
             #로직
     ```
 ### 4일차 : 2월 6일   
-- 모듈, 패키지
+- 리스트 연산
+    - for, while문에는 반복할 수 있는 요소가 필요(iterable)  (예)range(5) [1,2,3]
+    - 자료구조에서는 딕셔너리(키, 값 저장 역할), 리스트(반복문에서 활용)를 주로 사용한다.
+
+    - 연산 : + , * , del(lst),del(lst[0]),  lst.append(), lst.insert(index, value) , len(), sort(reverse=false) , reverse(인덱스를 뒤에꺼부터 시작하는, 값 반전) , index(value) , pop()하면 return은 value이다.
+    - `리스트 컴프리핸션  arr = [i for i in range(1,101)]`
+- 리스트와 문자열 연산 정리
+    - 공통: 인덱싱, 슬라이싱 , + , *   
+        - 리스트 :  `데이터수정가능`, append,del,insert,len, sort , pop, index 등                                    
+        - 문자열 : replace,upper,lower, strip, find, count , split
+
+
+- 객체지향
+    - 클래스 작성방법, 속성, 메서드, 캡슐화(멤버변수 폐쇄화, __멤버변수), **상속** , **추상화**, **인터페이스**, **다형성** ,**SOLID원칙**
+
+    1. 멤버변수
+        - ` 멤버변수 이름 앞에 __ 쓰면 외부접근 불가`
+    2. 멤버함수
+        - get, set 사용자 지정 함수 + 조건문 추가 (예)if type(plateNumber) is str:
+        - __str__을 통해 객체의 멤버변수 내용 출력
+
+- 모듈, 패키지 
+    1. 모듈 : 함수나 클래스 등 자주 사용할 파이썬 파일로 만든것
+        - import 모듈명 , from 모듈명 import 상세
+
+    2. 패키지(라이브러리) : 모듈을 모아둔 폴더
+        - `설치가이드 사이트: https://pypi.org/`
+        - pip install
+
+    - `if __name__ == '__main__' `
+        - __main__ 은 프로그램이 시작하는 진입점(entry point) 지칭
+        - c언어 등의 static void main()과 동일한 역할
+        - `폴더 안에 py파일 중 실행되는 파이썬 파일이 __main__이 되고 나머지는 모듈이 됨`
+
+### 5일차 : 2월 7일   
 - 예외처리
+    1) 문법적 오류 - error 
+        - 코드 작성 시 빨간 밑줄 뜸, 콘솔창에 오류 뜨지 않음
+        - 오류표시가 안 나는 코딩을 잘못한 오류 포함 (예)mul(7,6) -> 42 예상 , 그러나 결과가 13인 경우 
+    
+    2) 실행 중 발생 예외  -exception 
+        - 콘솔창에 오류 뜸
+
 - 디버깅
