@@ -39,8 +39,15 @@ array2 = [2,4,6,8,10]
 # print(array2)
 
 # 리스트 합칠 때
-# array2 + array
-# print(array2.extend(array))
+x= ['W' ,'Y' , 'Z']
+y= ['A' ,'C' , 'E']
+x.append(y)
+print(x)    #['W', 'Y', 'Z', ['A', 'C', 'E']]
+
+x= ['W' ,'Y' , 'Z']
+y= ['A' ,'C' , 'E']
+x.extend(y)
+print(x)    #['W', 'Y', 'Z', 'A', 'C', 'E']
 
 # 리스트 정렬
 # 쇼핑몰 낮은, 높은 가격순/최신일자
@@ -74,5 +81,3 @@ arr_even = [i for i in range(1,100+1,2)]
 for i in arr_even :
     sum = sum + i
 print(f'1부터 100까지의 짝수의 합 : {sum}')
-
-

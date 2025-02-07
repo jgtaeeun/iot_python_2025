@@ -137,6 +137,7 @@
 
 
 - 객체지향
+    - object는 모든 클래스의 부모 클래스이다.
     - 클래스 작성방법, 속성, 메서드, 캡슐화(멤버변수 폐쇄화, __멤버변수), **상속** , **추상화**, **인터페이스**, **다형성** ,**SOLID원칙**
 
     1. 멤버변수
@@ -159,12 +160,87 @@
         - `폴더 안에 py파일 중 실행되는 파이썬 파일이 __main__이 되고 나머지는 모듈이 됨`
 
 ### 5일차 : 2월 7일   
+- 백준문제 문자열 연산
+    - list_a =input().split() 일 때, type(list_a)는 list이다. 
+    - list(map(int, input().split()))
+    - [0]*10
+
+- 리스트 연산 추가(append, extend)
+    ``` python
+        x= ['W' ,'Y' , 'Z']
+        y= ['A' ,'C' , 'E']
+        x.append(y)
+        print(x)    #['W', 'Y', 'Z', ['A', 'C', 'E']]
+
+        x= ['W' ,'Y' , 'Z']
+        y= ['A' ,'C' , 'E']
+        x.extend(y)
+        print(x)    #['W', 'Y', 'Z', 'A', 'C', 'E']
+    ```
+- 스폐셜함수 조회 : print(dir(int))   
+
+- `보기 - 자동줄바꿈 체크`
+- `VERSION = 0.1   # 변수를 상수화 : 대문자`
+- `for i, v in enumerate(items):`
+
+``` python
+# items변수는 list타입이라고 지정
+def get_movie(items:list):
+    for item in items :
+        print(item) 
+ ```
 - 예외처리
     1) 문법적 오류 - error 
         - 코드 작성 시 빨간 밑줄 뜸, 콘솔창에 오류 뜨지 않음
         - 오류표시가 안 나는 코딩을 잘못한 오류 포함 (예)mul(7,6) -> 42 예상 , 그러나 결과가 13인 경우 
     
-    2) 실행 중 발생 예외  -exception 
+    2)  예외  - exception 
+        - 실행 중 발생하여 프로그램을 비정상 종료시키는 것
         - 콘솔창에 오류 뜸
+        - 예외처리 안에 또 예외처리 넣으면 속도 느려짐이 심해지니 지양
+        
+    ``` python
+        try :
+        except Exception as e:
+        finally :
+    ```
+       
 
-- 디버깅
+- 디버깅 : 왼쪽의 실행 및 디버그 탭
+    -   시작 f5
+    -   중단점 f9
+    -   한줄실행 -f10
+    -   함수 내부로 들어가면서 한줄 실행 f11
+    -   종료 shift f5
+    -   변수탭
+    -   조사식탭
+
+### 5일차 : 2월 7일   토이프로젝트 (콘솔앱 : 내 영화 앱)
+- 예외처리
+    -  메뉴 입력 sel_menu = int(input('메뉴 번호입력:'))
+        - ㅂ일 경우, ValueError => try: except :sel_menu = 0 로 예외처리
+
+    - 영화정보 입력  title, release, sponsor, rate = input('영화입력[영화제목|개봉일| 배급사|평점 순]: ').split('|')
+        - input은 문자열이기에 개봉일, 평점을 int, float으로 행변환해야 나중에 연산할 수 있다.
+        - 입력한 개수가 4개가 아닐경우, try except로 예외처리
+        - 입력 순서가 title, release, sponsor, rate순서여야 정해둔 행변환 실행오류 없다.
+
+- 보통 삭제할 때, id를 삭제한다. 지금은 id없으니 이름으로 삭제한다.
+
+- 파일쓰기, 읽기
+    - f.write(f'{}')
+    - f.readline().replace().split()
+    - `파일에서 읽을 때 숫자나 실수는 문자열이기에 int(), float()해줘야함`
+
+### 6일차 : 2월 10일 
+- 파이썬 응용
+    - 토이프로젝트
+        - 내 영화 앱 수정, 마무리
+        - 챗gpt 윈도우앱(tkinter) 만들기
+
+    - 주피터 노트북 학습
+
+    - PyQt학습
+
+    - 토이프로젝트
+        - 윈도우앱(PyQt)
