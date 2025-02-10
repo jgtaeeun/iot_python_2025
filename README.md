@@ -237,6 +237,7 @@ def get_movie(items:list):
     - shift + printScreen
     - 저장경로 설정
 
+
 - 파이썬 응용 1
     - 토이프로젝트
         - 내 영화 앱 수정, 마무리
@@ -245,18 +246,15 @@ def get_movie(items:list):
 
 https://github.com/user-attachments/assets/56133dcc-3b15-40b8-b252-f903ec6ccb03
 
-
-
  - 파이썬 응용 2  
-    - 주피터 노트북
+    - 주피터 노트북 : GUI 학습에는 불합리/빅데이터분석, 머신러닝, 딥러닝에 많이 활용
         - 파이썬으로 연구를 목적으로 하는 리포트 작성에 특화된 기술
-
         - 설치
             - CTRL + SHIFT + P (명령 팔레트) 
-                - CREATE :새 Jupyter Notebook
-                - `파일 저장 먼저 해야함!!!`
-            - 커널 설치
-                - 커널 선택 - 확장추천 - 현재 쓰고 있는 파이썬 버전 선택- vscode 허용
+            - CREATE :새 Jupyter Notebook
+            - `파일 저장 먼저 해야함!!!`
+        - 커널 설치
+            - 커널 선택 - 확장추천 - 현재 쓰고 있는 파이썬 버전 선택- vscode 허용
                 
         - 기본사용법
             - `파일 저장 먼저 해야함!!!`
@@ -266,16 +264,37 @@ https://github.com/user-attachments/assets/56133dcc-3b15-40b8-b252-f903ec6ccb03
             - B
             - `터미널 명령어 실행 : 코드쉘에서 !를 붙이고 명령어 실행`
 
-    - GUI 학습(tinker)
+
+    - GUI 학습-tinker
         - GUI (Graphic User Interface) - 그래픽 사용자 인터페이스
         - CLI (Console Line Interface) - GUI 이전에 사용자 인터페이스.사용이 불편. 사용자가 명령어를 거의 다 외워서 사용
 
+
         ```python
+        from tkinter import *
+        import tkinter.font as fnt
+        from tkinter.messagebox import *
+
         root = Tk()
-        label = Label(master=root, text='Hello Tkinter!')
-        label.pack()
+        # 위젯, 이벤트
+        
+        # Label(image=), Button(command=), Entry(),  Radiobutton(value, variable) ,
+        # Checkbutton( variable) , ListBox(height=), Frame()
+        # 위젯.pack()
+
+        # def countUp(): showInfo()
+        
         root.mainloop()
         ```
+        - 주피터노트북에서 만든 카운터 실습 예제 코드를 라이브러리 포함해서 .py파일에서 실행할 수 있다.
+        - `.ipynb 파일경로 :img = PhotoImage(file='./baoFamily.png')`
+        - `.py 파일경로 :img = PhotoImage(file='./day06/baoFamily.png')`
+ 
+<!-- 주석 -->
+<!-- html에서 사용하는  <img>태그로 캡처한 이미지를 추가-->
+![tikenter 위젯 예제](../project_img/tikenter 위젯 예제.png)
+<img src="../project_img/tikenter 위젯 예제.png" width="400">
+            
     - 파이썬 GUI 라이브러리
         1. PyQt / PySide
             - 파이썬 최고의 GUI 라이브러리.
@@ -296,7 +315,10 @@ https://github.com/user-attachments/assets/56133dcc-3b15-40b8-b252-f903ec6ccb03
             - 모바일 특화로 멀티플랫폼 지원
             - 가장 어렵다
         
-    - PyQt학습
-    - 챗gpt 윈도우앱(tkinter) 만들기
-    - 토이프로젝트
-        - 윈도우앱(PyQt)
+    - API
+        - 구글 gemini api
+    
+- PyQt학습
+- 챗gpt 윈도우앱(tkinter) 만들기
+- 토이프로젝트
+    - 윈도우앱(PyQt)

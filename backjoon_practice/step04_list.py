@@ -120,17 +120,26 @@
 #         count.append(i)
 # print(len(count))
 
-# 바구니 역순
-N, M = map(int, input().split())
-basket = [i for i in range(1,N+1)]
+#바구니 역순 -인덱스는 0부터
+# N, M = map(int, input().split())
+# basket = [i for i in range(1,N+1)]
 
-for _ in range(M):
-    i, j = map(int, input().split())
-    a = basket[:i]
-    b = basket [i:j+1]
-    b.reverse()
-    c = basket[j+1:]
-    
-for i in basket:
-      print(i, end=' ')
+# for _ in range(M):
+#     i, j = map(int, input().split())
+#     b = basket[i-1:j]
+#     b.reverse()
+#     basket[i-1:j] = b
+# for i in basket:
+#       print(i, end=' ')
+
+
+# 평균
+N = int(input()) 
+score = list (map(int, input().split()))
+for i in range(N):
+        score[i]  =float(f'{(score[i]  / max(score) * 100):.2f}') 
+print(score)
+
+print(sum(score)/N)
+
 
