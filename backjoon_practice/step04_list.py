@@ -111,3 +111,15 @@
 # print(min(student))
 # print(max(student))
 
+#나머지 개수 구하기
+i = list( map (int, input().split()))
+count = 0
+for k in range(len(i)):
+    i[k] = i[k] % 42
+    print(i[k])
+# if k not in i:
+#     count +=1 
+
+
+
+

@@ -22,14 +22,13 @@ def run():
         sel_menu = set_menu()
         
         if sel_menu==1 :
-            # print('영화입력')
-            movie = set_movie()
-            if type(movie) != Movie:
-                print('입력순서와 입력개수를 지켜주세요')
-            else :
+            try :
+                movie = set_movie()
                 lst_movie.append(movie)
-                print()
-            
+                print('등록되었습니다.')
+            except Exception as e:
+                print('입력순서와 입력개수를 지켜주세요')
+
 
         elif sel_menu== 2 :
             print('---전체 리스트---')
@@ -61,14 +60,14 @@ def run():
         clear_console()
 
 def set_movie():
-    try :
+    
         # (title, release, sponsor, rate) = input('영화입력[영화제목|개봉일| 배급사|평점 순]: ').split('|')
-        title, release, sponsor, rate = input('영화입력[영화제목|개봉일| 배급사|평점 순]: ').split('|') #입력 개수 오류
+        title, release, sponsor, rate = input('영화입력[영화제목|개봉일|배급사|평점 순]: ').split('|') #입력 개수 오류
+
         movie = Movie(title=title,release= int(release), sponsor=sponsor, rate=float(rate))   #input은 다 문자열이기에 연산을 위한 행변환이 필요-데이터형 오류
         return movie
     
-    except Exception as e:   #입력개수, 형변환을 위한 입력순서
-        return e
+  
 
     
     
@@ -78,17 +77,24 @@ def get_movie(items:list):
     for item in items :
         print(item)     #Movie클래스 객체
         print()
+    print(f'총 데이터 개수는 {len(items)}개 입니다.')
 
 # 필터조회(검색기능)
 def search_movie(items:list, search_keyword:str):
     status = False
+    count =0
     for i in items:
         if i.isNameContain(search_keyword) :
             print(i)
             status = True
+            count += 1
+            print()
+
     if status == False :
         print('검색된 결과가 없습니다.')
-        
+    else :
+        print(f'검색된 데이터 수는 {count}개 입니다.')
+
 # 삭제
 # 보통 삭제할 때, id를 삭제한다. 지금은 id없으니 이름으로 삭제한다.
 

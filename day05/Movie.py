@@ -31,6 +31,10 @@ class Movie :
     def isNameContain (self, search_name):
         if search_name in self.__title :   # search_name = '히트맨' , title='히트맨2'
             return True
+        elif search_name.upper() in self.__title :
+            return True
+        elif search_name.lower() in self.__title :
+              return True
         else :
             return False
     
