@@ -292,8 +292,10 @@ https://github.com/user-attachments/assets/56133dcc-3b15-40b8-b252-f903ec6ccb03
  
 <!-- 주석 -->
 <!-- html에서 사용하는  <img>태그로 캡처한 이미지를 추가-->
-![tkinter_위젯_예제](../project_img/tkinter_위젯_예제.png)
-<img src="../project_img/tkinter_위젯_예제.png" width="400">
+
+<!-- ![tkinter_위젯_예제](./day06/tkinter_위젯_예제.png) -->
+
+<img src="./day06/tkinter_위젯_예제.png" width="400">
             
     - 파이썬 GUI 라이브러리
         1. PyQt / PySide
