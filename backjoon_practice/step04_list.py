@@ -112,14 +112,25 @@
 # print(max(student))
 
 #나머지 개수 구하기
-i = list( map (int, input().split()))
-count = 0
-for k in range(len(i)):
-    i[k] = i[k] % 42
-    print(i[k])
-# if k not in i:
-#     count +=1 
+# count =[]
+# for _ in range(10):
+#     i = int(input())
+#     i = i % 42
+#     if i not in count :
+#         count.append(i)
+# print(len(count))
 
+# 바구니 역순
+N, M = map(int, input().split())
+basket = [i for i in range(1,N+1)]
 
-
+for _ in range(M):
+    i, j = map(int, input().split())
+    a = basket[:i]
+    b = basket [i:j+1]
+    b.reverse()
+    c = basket[j+1:]
+    
+for i in basket:
+      print(i, end=' ')
 

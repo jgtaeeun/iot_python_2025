@@ -29,12 +29,13 @@ class Movie :
     
     # 영화검색할 때, 검색어가 포함된 것
     def isNameContain (self, search_name):
-        if search_name in self.__title :   # search_name = '히트맨' , title='히트맨2'
+        # 히트맨/히/NOCTURNAL/n
+        if search_name.upper() in self.__title :   # search_name = '히트맨' , title='히트맨2'
             return True
-        elif search_name.upper() in self.__title :
+        # 영어
+        elif (search_name[0].upper() + search_name[1:].lower() ) in self.__title :
             return True
-        elif search_name.lower() in self.__title :
-              return True
+    
         else :
             return False
     

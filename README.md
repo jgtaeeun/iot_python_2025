@@ -237,21 +237,66 @@ def get_movie(items:list):
     - shift + printScreen
     - 저장경로 설정
 
-- 파이썬 응용
+- 파이썬 응용 1
     - 토이프로젝트
         - 내 영화 앱 수정, 마무리
             - 예외처리
             - 화면편집
 
-
 https://github.com/user-attachments/assets/56133dcc-3b15-40b8-b252-f903ec6ccb03
 
-      
-        - 챗gpt 윈도우앱(tkinter) 만들기
 
-    - 주피터 노트북 학습
 
+ - 파이썬 응용 2  
+    - 주피터 노트북
+        - 파이썬으로 연구를 목적으로 하는 리포트 작성에 특화된 기술
+
+        - 설치
+            - CTRL + SHIFT + P (명령 팔레트) 
+                - CREATE :새 Jupyter Notebook
+                - `파일 저장 먼저 해야함!!!`
+            - 커널 설치
+                - 커널 선택 - 확장추천 - 현재 쓰고 있는 파이썬 버전 선택- vscode 허용
+                
+        - 기본사용법
+            - `파일 저장 먼저 해야함!!!`
+            - CTRL + ENTER : 실행
+            - ENTER : 작성    
+            - ALT + ENTER : 실행 및 쉘 추가
+            - B
+            - `터미널 명령어 실행 : 코드쉘에서 !를 붙이고 명령어 실행`
+
+    - GUI 학습(tinker)
+        - GUI (Graphic User Interface) - 그래픽 사용자 인터페이스
+        - CLI (Console Line Interface) - GUI 이전에 사용자 인터페이스.사용이 불편. 사용자가 명령어를 거의 다 외워서 사용
+
+        ```python
+        root = Tk()
+        label = Label(master=root, text='Hello Tkinter!')
+        label.pack()
+        root.mainloop()
+        ```
+    - 파이썬 GUI 라이브러리
+        1. PyQt / PySide
+            - 파이썬 최고의 GUI 라이브러리.
+            - Qt라는 C/C++ 사용할 GUI 라이브러리를 Python용으로 변경
+            - 화려한 UI 구성
+            - 코딩 다양성
+            - 조금 어렵다(Python코드와 분리가능)
+            - Qt가 라이선스 구매필수, 반면 프리웨어로 변경한게 Pyside
+
+        2. Tkinter 
+            - 파이썬에 내장되어 있는 GUI 라이브러리
+            - 아주 단순. 학습이 쉬움
+            - 안 이쁘다
+
+        3. Kivy
+            - 가장 최근에 나온 GUI 라이브러리
+            - 안드로이드, IOS 모바일 앱 UI로 사용가능
+            - 모바일 특화로 멀티플랫폼 지원
+            - 가장 어렵다
+        
     - PyQt학습
-
+    - 챗gpt 윈도우앱(tkinter) 만들기
     - 토이프로젝트
         - 윈도우앱(PyQt)
