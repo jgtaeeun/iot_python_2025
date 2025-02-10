@@ -242,7 +242,11 @@ def get_movie(items:list):
         - 내 영화 앱 수정, 마무리
             - 예외처리
             - 화면편집
-            
+
+
+https://github.com/user-attachments/assets/56133dcc-3b15-40b8-b252-f903ec6ccb03
+
+      
         - 챗gpt 윈도우앱(tkinter) 만들기
 
     - 주피터 노트북 학습
