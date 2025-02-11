@@ -296,7 +296,8 @@ https://github.com/user-attachments/assets/56133dcc-3b15-40b8-b252-f903ec6ccb03
 <!-- ![tkinter_위젯_예제](./day06/tkinter_위젯_예제.png) -->
 
 <img src="./day06/tkinter_위젯_예제.png" width="400">
-            
+
+- 파이썬 응용 2              
     - 파이썬 GUI 라이브러리
         1. PyQt / PySide
             - 파이썬 최고의 GUI 라이브러리.
@@ -323,14 +324,16 @@ https://github.com/user-attachments/assets/56133dcc-3b15-40b8-b252-f903ec6ccb03
 ### 7일차 : 2월 11일     
 - 파이썬 응용 3
     - 챗gpt 유사앱 -구글 제미나이 api +tkinter ->chapbot만들기과정.txt 참고하기
-    - gemini챗앱을 클래스로 만들기 -> py02_gemini_app.py
+    - `gemini챗앱을 클래스로 만들기 -> py02_gemini_app.py`
 
 - 실행파일 만들기
     - pyinstaller 모듈 설치 
         - pip install pyinstaller
+    - 실행파일 명령어 (터미널에서 실행)
         - pyinstaller --onefile python_file.py  (예)pyinstaller --onefile .\day07\py02_gemini_app.py
         - 같이 실행되는 터미널을 제거하려면  pyinstaller --onefile .\day07\py02_gemini_app.py --noconsole
-    - 실행파일 경로 :C:\Source\iot_python_2025\dist
+        - 아이콘 등의 리소스를 dist폴더에 복사필요
+        - 실행파일 경로 :C:\Source\iot_python_2025\dist
     
 https://github.com/user-attachments/assets/5eaff7bf-9cf6-4e32-907e-bb21fc3c02b1
 

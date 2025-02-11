@@ -6,7 +6,7 @@ from tkinter.scrolledtext import *
 from tkinter.font import *   
 import google.generativeai as genai
 
-genai.configure(api_key='')
+genai.configure(api_key='api 입력해야함')
 model = genai.GenerativeModel( model_name="gemini-1.5-flash")
 
 
@@ -17,7 +17,9 @@ class window(Tk):
         self.title ('gemini 챗봇 v2.0')
         self.geometry('730x450')
 
-        # pyinstaller 때는 실행파일폴더에 icon복사
+       
+        # self.iconbitmap('chat-bot.ico')  # pyinstaller 때는 실행파일폴더에 icon복사
+
         self.iconbitmap('./day07/chat-bot.ico')
 
         # 클래스 작업할 땐, self 키워드 유심히 잘 봐야함
