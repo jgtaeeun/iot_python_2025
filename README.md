@@ -319,8 +319,13 @@ https://github.com/user-attachments/assets/56133dcc-3b15-40b8-b252-f903ec6ccb03
         
     - API
         - 구글 gemini api
-    
-- PyQt학습
+
+### 7일차 : 2월 11일     
 - 챗gpt 윈도우앱(tkinter) 만들기
+
+
+
+- PyQt학습
+
 - 토이프로젝트
     - 윈도우앱(PyQt)

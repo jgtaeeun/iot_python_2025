@@ -1,0 +1,45 @@
+레이아웃
+root
+1)textResult =ScrolledText
+2)frame
+	- Text(), Button()
+
+----
+Button의 함수동작
+1)gemini 모듈
+2)함수 
+----
+사용자 편의
+1)엔터키로 입력 및 포커스
+	-bind('<keypress>',keypress>
+	focus_set()
+2) 입력 후 초기화
+	.delete('1.0',END)
+3) 글자색 차이
+from tkinter.font import *
+myfont = Font(family = '나눔고딕')
+
+.tag_config('user', font=myfont, foreground='red')
+
+4)스크롤 제일 아래
+textResult.see(END)
+
+5) x를 누를 때 종료경고메시지
+root.protocol('WM_DELETE_WINDOW', onClosing)
+def onClosing():
+	if askyesno('알림메시지','종료하겠습니까?') :
+		root.destory
+----
+api키 없을 때 예외처리
+try :
+	textResult.insert(END, '나: ' , Bold)
+	textResult.insert(END, inputMessage, 'USER')
+except :
+	예외출력
+finally :
+	스크롤 제일아래쪽
+-------
+# 12. 아이콘 변경
+root.iconbitmap('./day07/chat-bot.ico')
+아이콘변경 convertio
+아이콘 flaticon
