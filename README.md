@@ -321,7 +321,17 @@ https://github.com/user-attachments/assets/56133dcc-3b15-40b8-b252-f903ec6ccb03
         - 구글 gemini api
 
 ### 7일차 : 2월 11일     
-- 챗gpt 윈도우앱(tkinter) 만들기
+- 파이썬 응용 3
+    - 챗gpt 유사앱 -구글 제미나이 api +tkinter ->chapbot만들기과정.txt 참고하기
+    - gemini챗앱을 클래스로 만들기 -> py02_gemini_app.py
+
+- 실행파일 만들기
+    - pyinstaller 모듈 설치 
+        - pip install pyinstaller
+        - pyinstaller --onefile python_file.py  (예)pyinstaller --onefile .\day07\py02_gemini_app.py
+        - 같이 실행되는 터미널을 제거하려면  pyinstaller --onefile .\day07\py02_gemini_app.py --noconsole
+    - 실행파일 경로 :C:\Source\iot_python_2025\dist
+    
 
 
 

@@ -7,7 +7,7 @@ from tkinter.font import *
 import google.generativeai as genai
 
 # 6.  gemini 연결 설정
-genai.configure(api_key='AIzaSyA7pSud7DQJPolB5LMPbBWRYk5aManHURo')
+genai.configure(api_key='')
 model = genai.GenerativeModel( model_name="gemini-1.5-flash")
 
 
