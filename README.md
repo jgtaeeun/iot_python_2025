@@ -332,6 +332,8 @@ https://github.com/user-attachments/assets/56133dcc-3b15-40b8-b252-f903ec6ccb03
         - 같이 실행되는 터미널을 제거하려면  pyinstaller --onefile .\day07\py02_gemini_app.py --noconsole
     - 실행파일 경로 :C:\Source\iot_python_2025\dist
     
+https://github.com/user-attachments/assets/5eaff7bf-9cf6-4e32-907e-bb21fc3c02b1
+
 
 
 
