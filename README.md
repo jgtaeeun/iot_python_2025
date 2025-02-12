@@ -338,9 +338,11 @@ https://github.com/user-attachments/assets/56133dcc-3b15-40b8-b252-f903ec6ccb03
 https://github.com/user-attachments/assets/5eaff7bf-9cf6-4e32-907e-bb21fc3c02b1
 
 
-
-
-- PyQt학습
-
-- 토이프로젝트
-    - 윈도우앱(PyQt)
+### 8일차 : 2월 12일  
+- 파이썬 응용 4
+    - GUI 중 Pygame
+        - 기본 윈도우 학습
+        - 이벤트 처리
+        - 간단한 게임
+        -  이미지, 사운드 등 리소스 활용 게임
+        
