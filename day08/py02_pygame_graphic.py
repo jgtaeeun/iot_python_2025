@@ -4,12 +4,23 @@ from pygame.draw import *
 import  pygame.image as img
 import sys      
 import os
+import math
+
 pygame.init()
 screen_surface = pygame.display.set_mode(size=(640,400))
 pygame.display.set_icon(pygame.image.load('./day08/apink.png'))
 FPSCLOCK= pygame.time.Clock()
 pygame.display.set_caption('MyMy Pygame')
 
+def draw_star(center, size, color):
+    points = []
+    for i in range(5):
+        angle = i * 144  # 별 모양을 만들기 위한 각도
+        x = center[0] + size * math.cos(math.radians(angle))
+        y = center[1] - size * math.sin(math.radians(angle))  # 화면 좌표계는 (0, 0)이 왼쪽 상단이므로 y 값을 반전시킴
+        points.append((x, y))
+
+    pygame.draw.polygon(screen_surface, color, points)
 
 def main():
     #  이미지 로드
@@ -55,8 +66,8 @@ def main():
         ellipse(screen_surface, 'gray', (70,70,20,50),3)
         
         # polygon 다각형(별)
-        pos = [(550,0),(540,20),(500,30),(530,70),(520,90),(550,70),(580,90),(570,50),]
-        # polygon(screen_surface, 'white',pos,3)
+        draw_star((300,25),10, 'white')  # 흰색 별 그리기
+
         # 이미지 flaticon.com
         screen_surface.blit(yesyes, (420, 150))  # 이미지 위치 변경
         screen_surface.blit(yesyes, (280, 370),(90,50,40,10))  # 이미지 위치 변경
