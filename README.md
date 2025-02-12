@@ -352,7 +352,7 @@ https://github.com/user-attachments/assets/5eaff7bf-9cf6-4e32-907e-bb21fc3c02b1
         https://github.com/user-attachments/assets/9e7fa95f-5a4e-4304-9f65-a07353c0880d
 
         - 간단한 게임(벽돌 깨기)
-        <img src="./project_img/pygame_block.mp4" width="700" height="450">
+        <img src="./project_img/pygame_block.mp4" width="600" height="450">
 
         - 수식 넣기 (https://editor.codecogs.com)
             - 글자포함한 수식 : '$'수식'$'
