@@ -339,6 +339,7 @@ https://github.com/user-attachments/assets/5eaff7bf-9cf6-4e32-907e-bb21fc3c02b1
 
 
 ### 8일차 : 2월 12일  
+- `깃허브데스크탑에서 change의 커밋, history의 tag를 같이 푸시 -> 깃허브에서 main에서 tags를 선택해서 파일 찾기`
 - 파이썬 응용 4
     - GUI 중 Pygame
         - 기본 윈도우 학습
@@ -352,5 +353,5 @@ https://github.com/user-attachments/assets/5eaff7bf-9cf6-4e32-907e-bb21fc3c02b1
 
         - 간단한 게임(벽돌 깨기)
 
-        
+
         -  이미지, 사운드 등 리소스 활용 게임
