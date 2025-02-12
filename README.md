@@ -342,7 +342,9 @@ https://github.com/user-attachments/assets/5eaff7bf-9cf6-4e32-907e-bb21fc3c02b1
 - 파이썬 응용 4
     - GUI 중 Pygame
         - 기본 윈도우 학습
-        
+        <img src="./day08/pygame_graphic.jpg" width="400">
+
         - 이벤트 처리
+        
         - 간단한 게임
         -  이미지, 사운드 등 리소스 활용 게임
