@@ -345,6 +345,9 @@ https://github.com/user-attachments/assets/5eaff7bf-9cf6-4e32-907e-bb21fc3c02b1
         <img src="./day08/pygame_graphic.jpg" width="400">
 
         - 이벤트 처리
-        
+
+        https://github.com/user-attachments/assets/53e2e056-3ab9-4c0f-aeb2-ac86cc4e74f5
+        https://github.com/user-attachments/assets/9e7fa95f-5a4e-4304-9f65-a07353c0880d
+
         - 간단한 게임
         -  이미지, 사운드 등 리소스 활용 게임
