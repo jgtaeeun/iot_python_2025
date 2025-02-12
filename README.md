@@ -354,4 +354,5 @@ https://github.com/user-attachments/assets/5eaff7bf-9cf6-4e32-907e-bb21fc3c02b1
         - 간단한 게임(벽돌 깨기)
 
 
-        -  이미지, 사운드 등 리소스 활용 게임
+        - 수식 넣기 (https://editor.codecogs.com)
+          벽돌깨기 게임에서 공의 x축 방향 계산방법 : x = r\times\cos\Theta 
