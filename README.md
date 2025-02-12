@@ -355,4 +355,4 @@ https://github.com/user-attachments/assets/5eaff7bf-9cf6-4e32-907e-bb21fc3c02b1
 
 
         - 수식 넣기 (https://editor.codecogs.com)
-          벽돌깨기 게임에서 공의 x축 방향 계산방법 : x = r\times\cos\Theta 
+          벽돌깨기 게임에서 공의 x축 방향 계산방법 : x = r \cdot \cos \Theta 
