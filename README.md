@@ -360,3 +360,7 @@ https://github.com/user-attachments/assets/5eaff7bf-9cf6-4e32-907e-bb21fc3c02b1
             - 글자포함한 수식 : '$'수식'$'
             - 글자없이 수식 : '$$'수식'$$'
             - 벽돌깨기 게임에서 공의 x축 방향 계산방법 : $x = r \cdot \cos \Theta$ 
+
+### 9일차 : 2월 13일
+- 코딩테스트
+    - ord('A') = 65 , chr(65) = 'A'
