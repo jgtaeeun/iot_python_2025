@@ -23,4 +23,5 @@ IOT 개발자과정
     
 - https://www.docker.com/
     - Download for Windows  AMD-64
+    - docker desktop -wsl update failed 일 경우, power shell에서 PS C:\Users\Admin> wsl PS C:\Users\Admin> wsl
 
